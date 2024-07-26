@@ -1,0 +1,120 @@
+/* General styling for the body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main product grid styling */
+.main_pro {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 11%;
+  margin-right: 3%;
+}
+
+/* Individual product card styling */
+.main_pro > div {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main_pro > div > img {
+  width: 100%;
+  height: 64%;
+}
+
+.main_pro > div > h2 {
+  font-size: 19px;
+  margin-top: 11px;
+}
+
+.main_pro > div > p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.cartbtn {
+  width: 140px;
+  height: 50px;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+
+.s2 h3 {
+  font-size: 22px;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 350px) {
+  .main_pro {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 25%;
+  }
+  .main_pro > div {
+    width: 80%;
+    height: 390px;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 540px) {
+  .main_pro {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 23%;
+  }
+  .main_pro > div {
+    width: 90%;
+    height: 370px;
+  }
+  .main_pro > div > img {
+    height: 60%;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 800px) {
+  .main_pro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15%;
+  }
+  .main_pro > div {
+    width: 90%;
+    height: 390px;
+  }
+  .s2 h3 {
+    font-size: 19px;
+  }
+  label {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 940px) {
+  .main_pro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 8%;
+  }
+  .main_pro > div {
+    width: 90%;
+    height: 380px;
+  }
+}
